@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
       <div className="container-wide section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
@@ -106,7 +106,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 lg:mt-16 pt-8 border-t border-background/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
           <p className="text-background/60 text-sm">
             © {new Date().getFullYear()} LocalReach India. All rights reserved.
           </p>

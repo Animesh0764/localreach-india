@@ -45,7 +45,7 @@ const About = () => {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl font-bold text-foreground mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6"
             >
               Making local influence accessible
             </motion.h1>
@@ -113,15 +113,15 @@ const About = () => {
       {/* Values */}
       <section className="section-padding bg-secondary/30">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               What we believe
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               The principles that guide everything we build
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             {values.map((value, index) => (
               <motion.div
                 key={index}
@@ -155,10 +155,10 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Built with conviction
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-base sm:text-lg text-muted-foreground mb-8">
                 LocalReach is a founder-led product, built with a deep understanding of 
                 India's local business ecosystem and creator economy.
               </p>
@@ -181,20 +181,20 @@ const About = () => {
       {/* CTA */}
       <section className="section-padding bg-foreground text-background">
         <div className="container-wide text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Join the movement
           </h2>
-          <p className="text-lg text-background/70 mb-8 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg text-background/70 mb-8 max-w-xl mx-auto">
             Whether you're a local business or a creator, LocalReach is here to help you grow.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="xl" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="xl" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto" asChild>
               <Link to="/for-businesses">
                 Find Creators
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
-            <Button size="xl" variant="outline" className="border-background/20 text-background hover:bg-background/10" asChild>
+            <Button size="xl" variant="outline" className="border-background/20 text-background hover:bg-background/10 w-full sm:w-auto" asChild>
               <Link to="/for-creators">Join as Creator</Link>
             </Button>
           </div>

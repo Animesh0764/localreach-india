@@ -67,7 +67,7 @@ const HowItWorks = () => {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl font-bold text-foreground mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6"
             >
               How LocalReach Works
             </motion.h1>
@@ -149,15 +149,15 @@ const HowItWorks = () => {
       <section className="section-padding bg-secondary/30">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Built on trust & transparency
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 Every step is designed to protect both parties
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Private Until Deal",
@@ -192,20 +192,20 @@ const HowItWorks = () => {
       {/* CTA */}
       <section className="section-padding bg-foreground text-background">
         <div className="container-wide text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Ready to get started?
           </h2>
-          <p className="text-lg text-background/70 mb-8 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg text-background/70 mb-8 max-w-xl mx-auto">
             Join LocalReach today and start connecting with your local community.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="xl" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="xl" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto" asChild>
               <Link to="/for-businesses">
                 Find Creators
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
-            <Button size="xl" variant="outline" className="border-background/20 text-background hover:bg-background/10" asChild>
+            <Button size="xl" variant="outline" className="border-background/20 text-background hover:bg-background/10 w-full sm:w-auto" asChild>
               <Link to="/for-creators">Join as Creator</Link>
             </Button>
           </div>

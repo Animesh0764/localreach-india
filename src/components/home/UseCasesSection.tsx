@@ -44,12 +44,12 @@ export const UseCasesSection = () => {
   return (
     <section className="section-padding bg-secondary/30">
       <div className="container-wide">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-foreground mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4"
           >
             Real businesses. Real results.
           </motion.h2>
@@ -58,13 +58,13 @@ export const UseCasesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto"
           >
             See how local businesses across India are growing with hyperlocal influencer marketing
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {useCases.map((useCase, index) => (
             <motion.div
               key={index}

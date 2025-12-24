@@ -93,7 +93,7 @@ const ForBusinesses = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-foreground mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6"
             >
               Turn local creators into your best marketing channel
             </motion.h1>
@@ -127,15 +127,15 @@ const ForBusinesses = () => {
       {/* Benefits */}
       <section className="section-padding bg-background">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Why hyperlocal influencers work
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               For local businesses, relevance beats reach every time
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
@@ -163,15 +163,15 @@ const ForBusinesses = () => {
       {/* Examples */}
       <section className="section-padding bg-secondary/30">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Real scenarios, real impact
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               See how businesses like yours are using LocalReach
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {examples.map((example, index) => (
               <motion.div
                 key={index}
@@ -204,15 +204,15 @@ const ForBusinesses = () => {
       {/* Pricing */}
       <section className="section-padding bg-background">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Transparent fee structure
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               Pay only when you close a deal. No monthly fees, no signup costs.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -243,9 +243,9 @@ const ForBusinesses = () => {
               transition={{ delay: 0.1 }}
               className="bg-primary/5 rounded-2xl p-8 border-2 border-primary shadow-lg relative"
             >
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
-                Recommended
-              </div>
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">
+              Recommended
+            </div>
               <div className="h-12 w-12 rounded-xl bg-primary flex items-center justify-center mb-4">
                 <Crown className="h-6 w-6 text-primary-foreground" />
               </div>
@@ -269,13 +269,13 @@ const ForBusinesses = () => {
       {/* CTA */}
       <section className="section-padding bg-foreground text-background">
         <div className="container-wide text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Ready to find local creators?
           </h2>
-          <p className="text-lg text-background/70 mb-8 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg text-background/70 mb-8 max-w-xl mx-auto">
             Start discovering creators in your city. No signup fees, pay only when you close a deal.
           </p>
-          <Button size="xl" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button size="xl" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto">
             Start Discovering Creators
             <ArrowRight className="h-5 w-5" />
           </Button>

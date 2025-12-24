@@ -77,7 +77,7 @@ const ForCreators = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-foreground mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6"
             >
               Get discovered by brands in your city
             </motion.h1>
@@ -109,15 +109,15 @@ const ForCreators = () => {
       </section>
 
       {/* Platforms */}
-      <section className="py-12 bg-secondary/30 border-y border-border">
+      <section className="py-8 sm:py-12 bg-secondary/30 border-y border-border">
         <div className="container-wide">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <span className="text-muted-foreground font-medium">Create on any platform</span>
-            <div className="flex items-center gap-6">
+          <div className="flex flex-col items-center justify-center gap-4 sm:gap-6">
+            <span className="text-muted-foreground font-medium text-center">Create on any platform</span>
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
               {platforms.map((platform, index) => (
                 <div key={index} className="flex items-center gap-2 text-foreground">
-                  <platform.icon className="h-5 w-5 text-primary" />
-                  <span className="font-medium">{platform.name}</span>
+                  <platform.icon className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="font-medium text-sm sm:text-base">{platform.name}</span>
                 </div>
               ))}
             </div>
@@ -128,15 +128,15 @@ const ForCreators = () => {
       {/* Benefits */}
       <section className="section-padding bg-background">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Why creators choose LocalReach
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               Built for micro & nano creators who want fair deals and local opportunities
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
@@ -163,15 +163,15 @@ const ForCreators = () => {
       <section className="section-padding bg-secondary/30">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Your work is protected
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 We've built in safeguards so you can focus on creating
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   title: "Contact details stay private",
@@ -215,13 +215,13 @@ const ForCreators = () => {
       {/* CTA */}
       <section className="section-padding bg-foreground text-background">
         <div className="container-wide text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Ready to work with local brands?
           </h2>
-          <p className="text-lg text-background/70 mb-8 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg text-background/70 mb-8 max-w-xl mx-auto">
             Join hundreds of creators across India. Free forever, no hidden fees.
           </p>
-          <Button size="xl" className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button size="xl" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto">
             List Yourself for Free
             <ArrowRight className="h-5 w-5" />
           </Button>
