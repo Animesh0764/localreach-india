@@ -5,12 +5,12 @@ export const ProblemSection = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container-wide">
-        <div className="max-w-3xl mx-auto text-center mb-12">
+        <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-foreground mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4"
           >
             Why global platforms don't work for local businesses
           </motion.h2>
@@ -19,20 +19,20 @@ export const ProblemSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-muted-foreground"
+            className="text-base sm:text-lg text-muted-foreground"
           >
             Most influencer platforms focus on reach over relevance. 
             But for a café in Koramangala or a salon in Bandra, local influence matters more.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
           {/* Problems with global platforms */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-card rounded-2xl p-8 border border-border shadow-md"
+            className="bg-card rounded-2xl p-6 md:p-8 border border-border shadow-md"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="h-10 w-10 rounded-xl bg-destructive/10 flex items-center justify-center">
@@ -63,7 +63,7 @@ export const ProblemSection = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-primary/5 rounded-2xl p-8 border border-primary/20"
+            className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/20"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center">

@@ -7,12 +7,12 @@ export const BusinessModelSection = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container-wide">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-foreground mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4"
           >
             Simple, Transparent Pricing
           </motion.h2>
@@ -21,13 +21,13 @@ export const BusinessModelSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto"
           >
             Pay only when you close a deal. No upfront costs, no hidden fees.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
           {/* Standard */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ export const BusinessModelSection = () => {
             transition={{ delay: 0.1 }}
             className="bg-primary/5 rounded-2xl p-8 border-2 border-primary shadow-lg relative"
           >
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">
               Most Popular
             </div>
             <div className="h-12 w-12 rounded-xl bg-primary flex items-center justify-center mb-4">

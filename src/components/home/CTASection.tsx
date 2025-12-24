@@ -12,7 +12,7 @@ export const CTASection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
           >
             Ready to grow with local creators?
           </motion.h2>
@@ -21,7 +21,7 @@ export const CTASection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-background/70 mb-10 max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-background/70 mb-8 md:mb-10 max-w-2xl mx-auto"
           >
             Join hundreds of businesses and creators across India who are building 
             authentic, hyperlocal connections.
