@@ -103,7 +103,7 @@ const ForBusinesses = () => {
               transition={{ delay: 0.2 }}
               className="text-lg text-muted-foreground mb-8"
             >
-              Find micro-influencers in your exact locality—Koramangala, Andheri, Noida, 
+              Find micro-influencers in your exact locality—Noida, Delhi, Koramangala, Andheri 
               or anywhere in India. Drive real footfall, not just impressions.
             </motion.p>
             <motion.div
@@ -225,10 +225,10 @@ const ForBusinesses = () => {
               <h3 className="text-xl font-semibold text-foreground mb-2">Standard</h3>
               <div className="mb-4">
                 <span className="text-4xl font-bold text-foreground">20%</span>
-                <span className="text-muted-foreground"> commission</span>
+                <span className="text-muted-foreground"> commission/deal</span>
               </div>
               <p className="text-muted-foreground text-sm mb-4">
-                Per successful deal. Perfect for businesses just getting started.
+                Perfect for businesses just getting started.
               </p>
               <div className="p-3 bg-muted rounded-lg text-sm">
                 <span className="text-muted-foreground">Example: ₹10,000 deal →</span>

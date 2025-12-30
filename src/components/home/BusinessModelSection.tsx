@@ -40,11 +40,11 @@ export const BusinessModelSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">Standard</h3>
             <div className="mb-4">
-              <span className="text-4xl font-bold text-foreground">20%</span>
+              <span className="text-4xl font-bold text-foreground">20%/deal</span>
               <span className="text-muted-foreground"> commission</span>
             </div>
             <p className="text-muted-foreground text-sm mb-6">
-              Per successful deal. No monthly fees, no signup costs.
+              No monthly fees, no signup costs.
             </p>
             <ul className="space-y-3 mb-6">
               {[

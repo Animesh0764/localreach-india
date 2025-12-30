@@ -80,7 +80,7 @@ const About = () => {
               </div>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Most influencer platforms focus on celebrities and mega-influencers. They're built 
-                for D2C brands with big budgets, not for the café owner in Indiranagar or the 
+                for D2C brands with big budgets, not for the café owner in Greater Noida or the 
                 boutique in Bandra.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -167,10 +167,10 @@ const About = () => {
                   Questions? Ideas? Feedback?
                 </p>
                 <a
-                  href="mailto:hello@localreach.in"
+                  href="mailto:animeshsingh0704@protonmail.com"
                   className="text-primary font-medium hover:underline"
                 >
-                  hello@localreach.in
+                  animeshsingh0704@protonmail.com
                 </a>
               </div>
             </motion.div>
